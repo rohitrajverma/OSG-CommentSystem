@@ -1,0 +1,21 @@
+<div class="replies card mb-3 mt-2">
+    <div class="main">
+        <div class="right">
+            <div class="detail">
+                <img src="assets\images\{{comment.avatar}}" class="img-thumbnail thumbnail" alt="userImg">
+                <span class="user">{{comment.username}}</span>
+                <span class="date">{{comment.date | timeAgo}}</span>
+            </div>
+            <div class="comment">{{comment.text}}</div>
+            <div class="controls">
+                <app-like-dislike [likes]="comment.likes"></app-like-dislike>
+                <span class="replySpan" (click)="replyClick()">
+                    <i class="bi bi-chat-square replyIcon"></i><span>reply</span>
+                </span>
+            </div>
+            <app-comment-box (add)="onAdd($event)" *ngIf="isEditing"></app-comment-box>
+        </div>
+    </div>
+    <br/>
+    <app-comment *ngFor="let c of comment.comments" [comment]="c"></app-comment>
+</div>

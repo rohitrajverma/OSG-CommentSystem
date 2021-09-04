@@ -1,0 +1,19 @@
+.likeContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+    width: 60px;
+}
+
+.likeUnlike {
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.col {
+    margin: 5px;
+}
+
+.disabled {
+    pointer-events: none;
+}

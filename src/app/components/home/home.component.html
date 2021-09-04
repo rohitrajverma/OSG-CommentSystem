@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="post">
+        <div class="detail">
+            <img src="assets\images\boy.png" class="img-thumbnail thumbnail" alt="userImg">
+            <span class="user">Rohit Raj</span>
+            <span class="date">{{'2021-08-31T05:25:02.081Z'| timeAgo }}</span>
+        </div>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus perspiciatis explicabo molestiae? Optio porro non necessitatibus dolore eius adipisci maiores aspernatur iusto molestiae. Dolores maiores deserunt repudiandae natus repellendus
+            doloremqueLorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus perspiciatis explicabo molestiae? Optio porro non necessitatibus dolore eius adipisci maiores aspernatur iusto molestiae. Dolores maiores deserunt repudiandae natus
+            repellendus doloremque Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, enim. Ut maiores sunt reiciendis soluta aspernatur praesentium animi fugiat iure explicabo, accusantium rem nostrum
+            inventore, omnis cumque aliquid? Voluptatem, aliquid
+        </p>
+    </div>
+    <div class="comments">
+        Comments
+    </div>
+    <app-comment-box (add)="onSubmit($event)"></app-comment-box>
+    <app-comment *ngFor="let com of src | async" [comment]="com"></app-comment>
+</div>

@@ -1,0 +1,120 @@
+/* Add application styles & imports to this file! */
+
+@import "~bootswatch/dist/sandstone/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/sandstone/bootswatch";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html,
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.replies {
+    padding: 10px 5px 0px 5px;
+    border-radius: 2px;
+    display: block;
+    margin-left: 20px;
+}
+
+.main {
+    display: flex;
+}
+
+.replies .left {
+    text-align: center;
+    margin: 2px;
+    padding: 1px;
+}
+
+.right {
+    padding: 2px;
+    width: 100%;
+}
+
+.detail {
+    padding: 2px
+}
+
+.user {
+    color: #325d88;
+    font-weight: bold;
+}
+
+.user+.date {
+    margin-left: 5px;
+    opacity: 0.8;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+button {
+    margin: 5px;
+}
+
+.closeIcon {
+    height: 16px;
+    float: right;
+    top: 25px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.global-container {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000070;
+}
+
+form {
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.card-title {
+    font-weight: 300;
+}
+
+.login-form {
+    width: 330px;
+    margin: 20px;
+}
+
+.sign-up {
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+.alert {
+    margin-bottom: -30px;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.link {
+    color: #449b6b;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.table {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 80px;
+}
+
+.thumbnail {
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+}

@@ -1,0 +1,11 @@
+<div class="likeContainer">
+    <div class="like">
+        <i [ngClass]="{'bi bi-hand-thumbs-up': !likeClicked , 'bi bi-hand-thumbs-up-fill disabled': likeClicked}" (click)="likeButtonClick()" class="likeUnlike"></i>
+    </div>
+
+    <div class="col ">{{likes}}</div>
+
+    <div class="like ">
+        <i [ngClass]="{'bi bi-hand-thumbs-down': !dislikeClicked , 'bi bi-hand-thumbs-down-fill disabled': dislikeClicked}" (click)="dislikeButtonClick()" class="likeUnlike "></i>
+    </div>
+</div>

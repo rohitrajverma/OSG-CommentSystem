@@ -1,0 +1,4 @@
+<app-navbar (openLogin)="showLoginModal($event)" [closedLogin]="showLogin"></app-navbar>
+<router-outlet></router-outlet>
+<app-login [showLogin]="showLogin" (close)="closeLoginModal($event)"></app-login>
+<app-toaster-container></app-toaster-container>
